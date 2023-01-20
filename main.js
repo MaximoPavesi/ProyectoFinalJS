@@ -8,6 +8,8 @@
     this.tipo = tipo; 
 } */
 
+let precioBase = 0;
+
 class Auto {
     constructor(marca, anio, tipo) {
         this.marca = marca;
@@ -36,9 +38,9 @@ class Auto {
                 case "6":
                     resultado = precioBase + 10000;
                     break;
-            }
+            } return resultado;
         }
-    } return resultado;
+    }
 
 
 
@@ -128,12 +130,12 @@ idFormulario.addEventListener("submit", (e) => {
 
 //Creamos la funcion Mostrar Info:
 
-const resultado = document.getElementById("InfoUsuarios");
+const resultado = document.getElementById("infoUsuarios");
 
 const mostarInfo = (auto) => {
     let aux = "";
     aux += `<p class ="cantidad"> Su seguro es de: <p>
-            <p class="cantidad"> ${Auto.calcularSeguro()} <p>`
+            <p class="cantidad"> ${auto.calcularSeguro()} <p>`
     resultado.innerHTML = aux;
 }
 
