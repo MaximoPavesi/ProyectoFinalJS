@@ -143,12 +143,12 @@ const botonAdmin = document.getElementById("admin");
 const datosAdmin = document.getElementById("datosAdmin");
 
 botonAdmin.addEventListener("click", ()=> {
-    const autos = JSON.parce(localStorage.getItem("Auto"));
+    const autos = JSON.parse(localStorage.getItem("Auto"));
     let aux = "";
     autos.forEach(auto => {
-        aux += `<p class="cantidad"> Marca ${auto.marca} <p>
-                <p class="cantidad"> Correo Electronico ${auto.email} <p>
-                <p class="cantidad"> Patente ${auto.pantete} <p> <hr>`
+        aux += `<p class="cantidad"> Marca: ${auto.marca} </p>
+                <p class="cantidad"> Correo Electronico: ${auto.email} </p>
+                <p class="cantidad"> Patente: ${auto.patente} </p> <hr>`
     });
     datosAdmin.innerHTML = aux;
 })
