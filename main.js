@@ -11,10 +11,11 @@
 let precioBase = 0;
 
 class Auto {
-    constructor(marca, anio, tipo) {
+    constructor(marca, anio, patente, email) {
         this.marca = marca;
+        this.email = email;
+        this.patente = patente;
         this.anio = anio;
-        this.tipo = tipo;
     }
     calcularSeguro(){
         let resultado;
