@@ -134,8 +134,8 @@ const resultado = document.getElementById("infoUsuarios");
 
 const mostarInfo = (auto) => {
     let aux = "";
-    aux += `<p class ="cantidad"> Su seguro es de: <p>
-            <p class="cantidad"> ${auto.calcularSeguro()} <p>`
+    aux += `<p class ="cantidad"> Su seguro es de: </p>
+            <p class="cantidad"> ${auto.calcularSeguro()} </p>`
     resultado.innerHTML = aux;
 }
 
