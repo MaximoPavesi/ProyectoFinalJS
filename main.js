@@ -11,7 +11,7 @@
 let precioBase = 0;
 
 class Auto {
-    constructor(marca, anio, patente, email) {
+    constructor(marca, email, patente, anio) {
         this.marca = marca;
         this.email = email;
         this.patente = patente;
