@@ -1,0 +1,8 @@
+[
+    {"empresa":"Allianz", "precio":20000, "marca": "Audi" },
+    {"empresa":"Allianz", "precio":100000, "marca": "Ferrari" },
+    {"empresa":"Allianz", "precio":50000, "marca": "Mercedes" },
+    {"empresa":"Allianz", "precio":30000, "marca": "Bmw" },
+    {"empresa":"Allianz", "precio":75000, "marca": "Lamborghini"},
+    {"empresa":"Allianz", "precio":36000, "marca": "Ford"}
+]

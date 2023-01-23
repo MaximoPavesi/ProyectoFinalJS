@@ -162,3 +162,19 @@ botonAdmin.addEventListener("click", () => {
         gravity: "bottom"
     }).showToast();
 })
+const listado = document.getElementById("listado")
+const listadoDeCompetencia = "json/listado.json";
+
+fetch(listadoDeCompetencia)
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+        datos.forEach( autos => {
+            listado.innerHTML += `
+                <h2>Nombre de empresa: ${autos.empresa} </h2>
+                <p> Precio: ${autos.precio} </p>
+                <p> Marca: ${autos.marca} </p>
+            `
+        })
+    })
+    .catch(error => console.log(error))
+    .finally( () => console.log("Proceso Finalizado"))
